@@ -1558,7 +1558,9 @@ namespace Microsoft.AspNetCore.Razor.Language
                             sourceRangeStart.Value.AbsoluteIndex,
                             sourceRangeStart.Value.LineIndex,
                             sourceRangeStart.Value.CharacterIndex,
-                            contentLength);
+                            contentLength,
+                            sourceRangeStart.Value.LineCount,
+                            sourceRangeStart.Value.EndCharacterIndex);
                     }
                 }
             }
